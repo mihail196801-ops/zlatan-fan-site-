@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фан-сайт Златана Ибрагимовича | PSG Style</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <!-- Фон -->
+    <div class="background"></div>
+
+    <!-- Заголовок -->
+    <header class="header">
+        <h1>Златан Ибрагимович</h1>
+        <p>Король Парижа</p>
+    </header>
+
+    <!-- Видео голов -->
+    <section class="videos">
+        <h2>Лучшие голы за ПСЖ</h2>
+        <video width="560" height="315" controls>
+            <source src="assets/videos/goal1.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </section>
+
+    <!-- 3D Модель -->
+    <section class="model-3d">
+        <h2>Златан 3D</h2>
+        <model-viewer
+            src="assets/models/zlatan.glb"
+            alt="Златан Ибрагимович 3D"
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            environment-image="neutral"
+            shadow-intensity="1"
+            style="width: 300px; height: 400px;"
+            autoplay>
+        </model-viewer>
+    </section>
+
+    <!-- Галерея -->
+    <section class="gallery">
+        <h2>Галерея</h2>
+        <img src="assets/images/gallery1.jpg" alt="Златан в ПСЖ">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Zlatan_Ibrahimovi%C4%87_PSG_2013.jpg" alt="Златан в ПСЖ">
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
